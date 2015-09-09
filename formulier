@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aanmelden</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+            <article>
+                <h1> Aanmelden </h1>
+
+            <section>
+                <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+                <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+Amsterdam.</em></p>
+
+                <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+Voor vragen of opmerkingen kunt u <a href="http://www.smashingmagazine.com/2013/01/the-importance-of-sections/">contact</a> met ons op.</p>
+           </section>
+
+            <section>
+                    <form action="demo_form.asp">
+                        <fieldset>
+                         <legend>Contactgegevens:</legend>
+                          <label for="name">Naam*</label>
+                          <input type="text" id="name" required>
+                          <label for="company">Bedrijf</label>
+                          <input type="text" id="company">
+                          <label for="address">Adres*</label>
+                          <input type="text" id="address" required>
+                          <label for="postalcode">Postcode*</label>
+                          <input type="text" id= "postalcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required>
+                          <label for="place">Plaats*</label>
+                          <input type="text" id="place" required>
+                          <label for="e-mail">e-mail*</label>
+                          <input type="email" id="e-mail" required>
+                          *Deze velden zijn verplicht
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>Voorkeur</legend>
+                          <label>Ik wil mij aanmelden:</label>
+                          <input type="checkbox" name="reden-voor-aanmelding" value="Voor-project" id="voor-project"/>
+                          <label for="voor-project"> voor een project </label>
+                          <input type="checkbox" name="reden-voor-aanmelding" value="als-stage" id="als-stage"/>
+                          <label for="als-stage"> als stagebedrijf </label>
+                      </fieldset>
+
+                    <fieldset>
+                         <legend>Project</legend>
+                          <label for="title">Titel*</label>
+                          <input type="text" id="title" required>
+                          <label for="description">opdrachtomschrijving</label>
+                          <input type="text" id="description">
+                          <label for="targetgroup">doelgroepomschrijving*</label>
+                          <input type="text" id="targetgroup" required>
+                          <label for="goal">Doelstelling/intentie van het project*</label>
+                          <input type="text" id= "goal" required>
+                          <label for="time">looptijd*</label>
+                          <input type="text" id="time" required>
+                          <label for="deadline">deadline</label>
+                          <input type="text" id="deadline">
+                          *Deze velden zijn verplicht
+
+                         <label>geschikt voor:</label>
+                          <input type="checkbox" name="geschiktvoor-project" value="eerstejaars" id="eerstejaars-project">
+                          <label for="eerstejaars-project"> eerstejaars studenten </label>
+                          <input type="checkbox" name="geschiktvoor-project" value="tweedejaars" id="tweedejaars-project">
+                          <label for="tweedejaars-project"> tweedejaars studenten </label>
+                          <input type="checkbox" name="geschiktvoor-project" value="derdejaars" id="derdejaars-project">
+                          <label for="derdejaars-project"> derdejaars studenten </label>
+                          <input type="checkbox" name="geschiktvoor-project" value="afstudeer" id="afstudeer-project">
+                          <label for="afstudeer-project"> afstudeer studenten </label>
+                          <input type="checkbox" name="geschiktvoor-project" value="onbekend" id="onbekend-project">
+                          <label for="onbekend-project"> onbekend </label>
+                          <label for="comment">Opmerking</label>
+                          <input type="text" name="opmerking" id="comment">
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>Stage</legend>
+                          <label>geschikt voor:</label>
+                          <input type="checkbox" name="geschiktvoor-stage" value="tweedejaars" id="tweedejaars-stage">
+                          <label for="tweedejaars-stage"> tweedejaars studenten </label>
+                          <input type="checkbox" name="geschiktvoor-stage" value="afstudeer" id="afstudeer-stage">
+                          <label for="afstudeer-stage"> aftudeer studenten </label>
+                          <input type="checkbox" name="geschiktvoor-stage" value="onbekend" id="onbekend-stage">
+                          <label for="onbekend-stage"> onbekend </label>
+
+                          <a>Hoe lang is de stage?</a>
+                          <input type="radio" name="hoelang" value="10"> 10 weken
+                          <input type="radio" name="20" value="20"> 20 weken
+                          <label for="date">Begin datum</label>
+                          <input type="text" id="date">
+                          <label for="comment2">Opmerking</label>
+                          <input type="text" id="comment2">
+
+                          <a>Beschrijving werkzaamheden</a>
+                          <label for="description">Beschrijving stagewerkzaamheden*</label>
+                          <input type="text" id="discription" required>
+                          <label for="description2">opdrachtomschrijving</label>
+                          <input type="text" name="description2" id="description2">
+                          <label for="targetgroup2">doelgroepomschrijving*</label>
+                          <input type="text" name="targetgroup2" id="targetgroup2" required>
+                          <label for="goal2">Doelstelling/intentie van het project*</label>
+                          <input type="text" name="goal2" id= "goal2" required>
+                          <label for="time2">looptijd*</label>
+                          <input type="text" name="time2" id="time2" required>
+                          <label for="deadline2">deadline</label>
+                          <input type="text" name="deadline2" id="deadline2">
+                          *Deze velden zijn verplicht
+                      </fieldset>
+                      <input type="submit" value="aanmelden">
+                </form>
+            </section>
+        </article>
+    </body>
+</html>
